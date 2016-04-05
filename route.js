@@ -13,6 +13,21 @@ Router.route('/', function () {
 
 });
 
+Router.route('/:slug', function () {
+  this.layout('layoutPost');
+   
+   this.render('header', {
+    to:"header"
+  });
+
+  this.render('layoutBlog', {
+    to: "layoutBlog",
+    data:function(){
+      console.log(this.params.slug);
+      return blog_posts.findOne({slug:this.params.slug});
+    }
+  });
+}); 
 
 Router.route('/users', function () {
   this.layout('layoutUsers');

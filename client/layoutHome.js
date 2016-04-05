@@ -1,3 +1,17 @@
+Meteor.subscribe('blog_posts');
+
+ShareIt.init({
+    siteOrder: ['facebook', 'twitter'],
+    sites: {
+      'facebook': {
+        'appId': 'YOUR_APPLICATION_ID',
+        'version': 'v2.3',
+        //'buttonText': 'Share on FB'
+      }
+    },
+    iconOnly: true,
+    applyColors: false
+  });
 
 Template.header.helpers({
         // check if user is an admin
