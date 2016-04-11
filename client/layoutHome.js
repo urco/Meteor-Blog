@@ -1,4 +1,4 @@
-Meteor.subscribe('blog_posts');
+
 
 ShareIt.init({
     siteOrder: ['facebook', 'twitter'],
@@ -38,3 +38,4 @@ Template.users.helpers({
             return Roles.userIsInRole(Meteor.user(), ['admin']);
         }
     });
+

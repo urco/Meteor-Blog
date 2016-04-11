@@ -11,4 +11,3 @@ Meteor.startup(function () {
             Roles.createRole("double-secret");
     });
 
-//Meteor.publish('blog_posts');
