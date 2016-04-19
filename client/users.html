@@ -1,7 +1,9 @@
 <template name="users">
-    {{#if isAdminUser}}
-        {{> accountsAdmin}}
-    {{else}}
-        Must be admin to see this...
-    {{/if}}
+	<div class="container">
+	    {{#if isAdminUser}}
+	        {{> accountsAdmin}}
+	    {{else}}
+	        Must be admin to see this...
+	    {{/if}}
+	</div>    
 </template>

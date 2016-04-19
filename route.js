@@ -1,33 +1,19 @@
 //layout general messages
-
 Router.route('/', function () {
-  this.layout('layoutHome');
+   this.layout('layoutHome');
+  
+   this.render('layoutPortfolio', {
+    to:"layoutPortfolio"
+   });
+});
 
-   this.render('header', {
-    to:"header"
-  });
+Router.route('/blog', function () {
+  this.layout('layoutIndex');
 
    this.render('layoutIndexBlog', {
    		to:"layoutIndexBlog"
    });
-
 });
-
-Router.route('/:slug', function () {
-  this.layout('layoutPost');
-   
-   this.render('header', {
-    to:"header"
-  });
-
-  this.render('layoutBlog', {
-    to: "layoutBlog",
-    data:function(){
-      console.log(this.params.slug);
-      return Mongo.Collection.get('blog_posts').findOne({slug:this.params.slug});
-    }
-  });
-}); 
 
 Router.route('/users', function () {
   this.layout('layoutUsers');
@@ -39,6 +25,5 @@ Router.route('/users', function () {
    this.render('users', {
    		to:"users"
    });
-
 });
 

@@ -9,16 +9,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Brand</a>
+        <!--<a class="navbar-brand" href="/">Brand</a>-->
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li>
-            <a href="/">Blog</a>
+          <li class="{{ activeIfTemplateIs 'layoutHome' }}">
+            <a href="/">Portfolio</a> <!-- change for pathfor-->
           </li>
-
+          <li class="{{ activeIfTemplateIs 'layoutIndex' }}">
+            <a href="{{ pathFor 'blog' }}">Blog</a>
+          </li>
           {{#if isBlogUser}}
             <li>
               <a href="/admin/blog">Posts</a>
@@ -26,8 +28,8 @@
           {{/if}}  
 
           {{#if isAdminUser}}
-          <li>
-            <a href="/users">users</a>
+          <li class="{{ activeIfTemplateIs 'users' }}">
+            <a href="{{ pathFor 'users' }}">Users</a>
           </li>
           {{/if}}
 
@@ -36,6 +38,7 @@
           {{> loginButtons}}
         </ul>
       </div><!-- /.navbar-collapse -->
+
     </div><!-- /.container-fluid -->
   </nav>
 </template>  

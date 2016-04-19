@@ -1,5 +1,4 @@
 
-
 ShareIt.init({
     siteOrder: ['facebook', 'twitter'],
     sites: {
@@ -26,8 +25,7 @@ Template.header.helpers({
                 }
             if (Roles.userIsInRole(Meteor.user(), ['blogAdmin'])){
                  console.log("blogAdmin");
-                 return Roles.userIsInRole(Meteor.user(), ['blogAdmin']);
-                  
+                 return Roles.userIsInRole(Meteor.user(), ['blogAdmin']);            
             }    
            } 
         });
@@ -38,4 +36,13 @@ Template.users.helpers({
             return Roles.userIsInRole(Meteor.user(), ['admin']);
         }
     });
+
+Template.header.helpers({
+
+    activeIfTemplateIs: function (template) {
+      var currentRoute = Router.current();
+      return currentRoute &&
+        template === currentRoute.lookupTemplate() ? 'active' : 'active-link';
+    }
+  });
 
