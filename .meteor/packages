@@ -26,3 +26,4 @@ standard-minifier-css
 standard-minifier-js
 liberation:shareit
 dburles:mongo-collection-instances
+zimme:active-route

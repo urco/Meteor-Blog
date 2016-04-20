@@ -37,6 +37,7 @@ Template.users.helpers({
         }
     });
 
+/*
 Template.header.helpers({
 
     activeIfTemplateIs: function (template) {
@@ -44,5 +45,5 @@ Template.header.helpers({
       return currentRoute &&
         template === currentRoute.lookupTemplate() ? 'active' : 'active-link';
     }
-  });
+  });*/
 

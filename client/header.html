@@ -15,10 +15,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="{{ activeIfTemplateIs 'layoutHome' }}">
+          <li class="{{ isActiveRoute 'portfolio' class='active-link'}}">
             <a href="/">Portfolio</a> <!-- change for pathfor-->
           </li>
-          <li class="{{ activeIfTemplateIs 'layoutIndex' }}">
+          <li class="{{ isActiveRoute 'blog' class='active-link' }}">
             <a href="{{ pathFor 'blog' }}">Blog</a>
           </li>
           {{#if isBlogUser}}
@@ -28,7 +28,7 @@
           {{/if}}  
 
           {{#if isAdminUser}}
-          <li class="{{ activeIfTemplateIs 'users' }}">
+          <li class="{{ isActiveRoute 'users' class='active-link' }}">
             <a href="{{ pathFor 'users' }}">Users</a>
           </li>
           {{/if}}

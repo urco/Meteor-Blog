@@ -1,10 +1,14 @@
 //layout general messages
 Router.route('/', function () {
+  this.redirect('/portfolio');
+});
+
+Router.route('/portfolio', function () {
    this.layout('layoutHome');
-  
+
    this.render('layoutPortfolio', {
     to:"layoutPortfolio"
-   });
+   });   
 });
 
 Router.route('/blog', function () {

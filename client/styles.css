@@ -43,6 +43,7 @@
 	color: #263238;
 }
 
-.active-link {
+.active-link a {
 	color: #ec407a !important;
+	border-bottom: 1px solid;
 }
