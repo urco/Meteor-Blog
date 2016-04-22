@@ -11,6 +11,20 @@ Router.route('/portfolio', function () {
    });   
 });
 
+/*
+Router.route('/blog/:slug', function () {
+  this.layout('detailsPost');
+   console.log(this.params.slug);
+   this.render('layoutPost', {
+    to:"main",
+     data:function(){
+      return blog_posts.findOne({slug: this.params.slug});
+    }
+  });
+});
+*/ 
+
+
 Router.route('/blog', function () {
   this.layout('layoutIndex');
 

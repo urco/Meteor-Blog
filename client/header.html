@@ -18,7 +18,7 @@
           <li class="{{ isActiveRoute 'portfolio' class='active-link'}}">
             <a href="/">Portfolio</a> <!-- change for pathfor-->
           </li>
-          <li class="{{ isActiveRoute 'blog' class='active-link' }}">
+          <li class="{{ isActivePath regex='^\\/blog' class='active-link' }}">
             <a href="{{ pathFor 'blog' }}">Blog</a>
           </li>
           {{#if isBlogUser}}

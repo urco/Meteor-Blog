@@ -5,6 +5,11 @@
 	height: auto !important;
 }
 
+.meteor-blog-post-thumbnail{
+	width: 100% !important;
+	height: auto !important;
+}
+
 .meteor-blog-post-thumbnail a {
 	border-style: none !important;
 }
@@ -30,6 +35,7 @@
 
 }
 
+
 .description {
 	color: #263238;
 }
@@ -37,4 +43,9 @@
 .active-link a {
 	color: #ec407a !important;
 	border-bottom: 1px solid;
+}
+.meteor-blog-post .meteor-blog-post-thumbnail img {
+	display: block ;
+	margin-right: auto ;
+	margin-left: auto ;
 }
