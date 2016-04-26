@@ -5,10 +5,10 @@ ShareIt.init({
       'facebook': {
         'appId': 'YOUR_APPLICATION_ID',
         'version': 'v2.3',
-        //'buttonText': 'Share on FB'
+        'buttonText': 'Share on FB'
       }
     },
-    iconOnly: true,
+    iconOnly: false,
     applyColors: false
   });
 
@@ -37,13 +37,17 @@ Template.users.helpers({
         }
     });
 
-/*
-Template.header.helpers({
 
-    activeIfTemplateIs: function (template) {
-      var currentRoute = Router.current();
-      return currentRoute &&
-        template === currentRoute.lookupTemplate() ? 'active' : 'active-link';
-    }
-  });*/
+WebFontConfig = {
+    google: { families: [ 'Playfair+Display:400,700italic,400italic:latin','Open+Sans:400,400italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+    })();
+
 
