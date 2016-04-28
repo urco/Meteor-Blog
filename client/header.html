@@ -22,13 +22,12 @@
             <a href="{{ pathFor 'blog' }}">Blog</a>
           </li>
           {{#if isBlogUser}}
-            <li>
+            <li class="{{ isActivePath '/admin/blog' class='active-link' }}">
               <a href="/admin/blog">Posts</a>
             </li> 
           {{/if}}  
-
           {{#if isAdminUser}}
-          <li class="{{ isActiveRoute 'users' class='active-link' }}">
+          <li class="{{ isActivePath '/users' class='active-link' }}">
             <a href="{{ pathFor 'users' }}">Users</a>
           </li>
           {{/if}}

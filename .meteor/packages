@@ -27,3 +27,5 @@ standard-minifier-js
 liberation:shareit
 dburles:mongo-collection-instances
 zimme:active-route
+pcel:loading
+sacha:spin

@@ -5,10 +5,10 @@ ShareIt.init({
       'facebook': {
         'appId': 'YOUR_APPLICATION_ID',
         'version': 'v2.3',
-        'buttonText': 'Share on FB'
+        //'buttonText': 'Share on FB'
       }
     },
-    iconOnly: false,
+    iconOnly: true,
     applyColors: false
   });
 
@@ -36,7 +36,27 @@ Template.users.helpers({
             return Roles.userIsInRole(Meteor.user(), ['admin']);
         }
     });
+/*
+Template.loading.rendered = function () {
+  if ( ! Session.get('loadingSplash') ) {
+    this.loading = window.pleaseWait({
+      logo: '/images/Meteor-logo.png',
+      backgroundColor: '#7f8c8d',
+      loadingHtml: message + spinner
+    });
+    Session.set('loadingSplash', true); // just show loading splash once
+  }
+};
 
+Template.loading.destroyed = function () {
+  if ( this.loading ) {
+    this.loading.finish();
+  }
+};
+
+var message = '<p class="loading-message">Loading Message</p>';
+var spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>';
+*/
 
 WebFontConfig = {
     google: { families: [ 'Playfair+Display:400,700italic,400italic:latin','Open+Sans:400,400italic:latin' ] }
