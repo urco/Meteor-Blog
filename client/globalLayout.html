@@ -3,10 +3,14 @@
 	<header>
     	{{> header }}
 	</header>	
-	<main>
-		{{> yield }}
-	</main>	
-	<footer>
+	
+    <div id="wrap">	
+		<main id="main">
+			{{> yield }}
+		</main>	
+    </div>
+	
+	<footer id="footer">
 		{{> footer}}
 	</footer>
 

@@ -1,4 +1,35 @@
 /* CSS declarations go here */
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	margin-bottom: 20rem;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 150px;
+	}  /* must be same height as the footer */
+
+#footer {
+  
+  position: relative;
+  text-align: center;
+  padding-top: 5rem;
+  /*height: 15rem;*/
+  color:#eceff1;
+  background-color: #37474f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 250%;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+} 
+
 .active-link a {
 	color: #ec407a !important;
 	border-bottom: 1px solid;
@@ -21,9 +52,6 @@ span.author {
 	margin-left: 3rem;
 }
 
-.navbar-default{
-	margin-bottom: 2rem !important;
-}
 
 div.meteor-blog-post-main {
   padding-right: 15px !important;
@@ -51,7 +79,7 @@ p.commentable-section {
 }
 
 .meteor-blog-post-excerpt h2, .meteor-blog-post-meta {
-	text-align: center;
+	text-align: center !important;
 
 }
 
@@ -72,8 +100,9 @@ p.commentable-section {
 	color: #263238 !important;
 	font-weight: 700 !important;
 
+
 }
-.meteor-blog-post-excerpt   {
+.meteor-blog-post-excerpt {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.8rem;
 	line-height: 230%;
@@ -152,12 +181,13 @@ div.meteor-blog-post {
 }
 
 .navbar-default {
+	
 	background-color: #ffffff;
 	border-color: #ffffff;
-	margin-bottom: 5rem;
+	margin-bottom: 6rem;
 	margin-top: 3rem;
 	padding-left: 10rem;
-	padding-right: 5rem;
+	padding-right: 3rem;
 }
 
 .container {
@@ -202,9 +232,9 @@ div.meteor-blog-post {
 
 footer {
   text-align: center;
-  margin-top: 26rem !important; 
-  position: relative;
-  bottom: 0 !important;
+  margin-top: 26rem;  
+  position: relative ;
+  bottom: 0 ;
   width: 100%;
   padding-top: 5rem;
   /* Set the fixed height of the footer here */
