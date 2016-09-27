@@ -37,6 +37,13 @@ Template.users.helpers({
         }
     });
 
+Template.header.rendered = function (){
+  $(".navbar-toggle").on("click", function () {
+            $(this).toggleClass("active");
+        });
+};
+
+
 Template.layoutPortfolio.rendered = function (){
  $(".wrap-bg").backstretch([
           "https://source.unsplash.com/daily",
