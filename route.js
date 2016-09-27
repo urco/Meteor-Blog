@@ -11,22 +11,15 @@ Router.route('/', function () {
 });
 
 Router.route('/portfolio', function() {
-   //this.layout('globalLayout');
- 
    this.render('layoutPortfolio');
-
-});
-
+   });
 
 Router.route('/blog', function () {
-   //this.layout('globalLayout');
-
    this.render('layoutIndexBlog');
 });
 
-Router.route('/users', function () {
-  //this.layout('globalLayout');
+Router.route('/users', function () { 
+  this.render('users');
 
-   this.render('users');
 });
 

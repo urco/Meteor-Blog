@@ -1,25 +1,43 @@
 /* CSS declarations go here */
 
 html, body {
-	height: 100%;
+	width: 100%;
+  	height: 100%;
+  	min-height: 100%;
+  	margin:0;
+  	padding:0;
+}
+
+.wrap-bg {
+	height:100%;
 }
 
 #wrap {
-	min-height: 100%;
-	margin-bottom: 20rem;
+	width: 100%;
+	height: 100%;
+	/*margin-bottom: 20rem;*/
+}
+.meteor-blog-post {
+	/*padding-top: 10rem;*/
 }
 
+.wrap-users {
+	padding-top: 10rem;
+}
+
+
 #main {
-	overflow:auto;
-	padding-bottom: 150px;
-	}  /* must be same height as the footer */
+	width: 100%;
+	height: 100%;
+	/*padding-bottom: 150px;*/
+	} 
+
 
 #footer {
-  
+
   position: relative;
   text-align: center;
   padding-top: 5rem;
-  /*height: 15rem;*/
   color:#eceff1;
   background-color: #37474f;
   font-family: 'Open Sans', sans-serif;
@@ -28,6 +46,7 @@ html, body {
   margin-top: -150px; /* negative value of footer height */
   height: 150px;
   clear:both;
+
 } 
 
 .active-link a {
@@ -47,11 +66,21 @@ span.author {
 	font-weight: bold;
 }
 
-.posts {
-	margin-right: 3rem;
-	margin-left: 3rem;
+
+
+.welcome-text {
+	font-family: 'Playfair Display', serif; 
+	margin-top: 25rem;
+	text-align: center;
+	color: white;
+
 }
 
+.welcome-text h1{
+	font-weight: bold;
+	font-size: 4rem;
+
+}
 
 div.meteor-blog-post-main {
   padding-right: 15px !important;
@@ -60,11 +89,24 @@ div.meteor-blog-post-main {
   margin-left: auto !important;
 }
 
-div.meteor-blog-index {
-	padding-top: 0rem;
+
+.posts {
+	margin-right: 3rem;
+	margin-left: 3rem;
 }
 
+div.meteor-blog-index {
+	padding-top: 8rem;
+}
+
+.meteor-blog-index .meteor-blog-post {
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 40px;
+
+  }
+
 div.meteor-blog-index h2{
+	text-align: center;
 	margin-top: 5rem !important;
 }
 
@@ -78,19 +120,6 @@ p.commentable-section {
 	color: #ec407a !important;
 }
 
-.meteor-blog-post-excerpt h2, .meteor-blog-post-meta {
-	text-align: center !important;
-
-}
-
-.meteor-blog-post-excerpt h2 a {
-	
-	 font-family: 'Playfair Display', serif; 
-	 font-size: 5rem !important;
-	 color: #263238 !important;
-	 font-weight: 700 !important;
-
-}
 
 .meteor-blog-post-excerpt h2 {
 	margin-top: 1rem !important;
@@ -99,21 +128,12 @@ p.commentable-section {
 	font-size: 5rem !important;
 	color: #263238 !important;
 	font-weight: 700 !important;
-
-
-}
-.meteor-blog-post-excerpt {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.8rem;
-	line-height: 230%;
-	/*padding-left: 2.5rem;
-	padding-right: 2.5rem;*/
 }
 
 .meteor-blog-post-meta {
+	text-align: center;
 	margin-bottom: 2rem !important;
 	font-size: 1.20rem;
-
 }
 
 .medium-insert-images figure {
@@ -143,15 +163,12 @@ h1.meteor-blog-post-title.text-center {
 	font-weight: 700 !important;
 }
 
-div.meteor-blog-post {
+.meteor-blog-single {
   padding-right: 20px !important;
   padding-left: 20px !important;
+  padding-top: 2rem;
 }
-.meteor-blog-post-meta.text-center {
-	margin-bottom: 3rem !important;
-	font-size: 1.20rem;
 
-}
 .meteor-blog-post-meta {
 	margin-bottom: 3rem !important;
 	font-size: 1.20rem;
@@ -180,15 +197,6 @@ div.meteor-blog-post {
 	margin-bottom: 8px ;
 }
 
-.navbar-default {
-	
-	background-color: #ffffff;
-	border-color: #ffffff;
-	margin-bottom: 6rem;
-	margin-top: 3rem;
-	padding-left: 10rem;
-	padding-right: 3rem;
-}
 
 .container {
   padding-right: 15px !important;
@@ -196,6 +204,19 @@ div.meteor-blog-post {
   margin-right: auto !important;
   margin-left: auto !important;
 }
+
+
+
+.navbar-default {
+	
+	background-color: #ffffff;
+	opacity: 0.9;
+	border-color: #ffffff;
+	padding-left: 10rem;
+	padding-bottom: 3rem;
+	padding-right: 3rem;
+}
+
 
 .columns {
 	/*margin:1rem ;*/
@@ -227,6 +248,7 @@ div.meteor-blog-post {
 }
 
 .meteor-blog-admin {
+	margin-top: 10rem;
 	padding-top: 5rem;
 }
 

@@ -1,17 +1,10 @@
 <template name="globalLayout">
 	
 	<header>
-    	{{> header }}
+    	{{> header}}
 	</header>	
-	
-    <div id="wrap">	
-		<main id="main">
-			{{> yield }}
-		</main>	
-    </div>
-	
-	<footer id="footer">
+	{{>yield}}
+	<!--<footer id="footer">
 		{{> footer}}
-	</footer>
-
+	</footer>-->
 </template>	

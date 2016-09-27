@@ -36,31 +36,24 @@ Template.users.helpers({
             return Roles.userIsInRole(Meteor.user(), ['admin']);
         }
     });
-/*
-Template.loading.rendered = function () {
-  if ( ! Session.get('loadingSplash') ) {
-    this.loading = window.pleaseWait({
-      logo: '/images/Meteor-logo.png',
-      backgroundColor: '#7f8c8d',
-      loadingHtml: message + spinner
-    });
-    Session.set('loadingSplash', true); // just show loading splash once
-  }
+
+Template.layoutPortfolio.rendered = function (){
+ $(".wrap-bg").backstretch([
+          "https://source.unsplash.com/daily",
+          "https://source.unsplash.com/category/food/weekly",
+          "https://source.unsplash.com/category/people"
+
+        ], {
+            fade: 750,
+            duration: 4000
+        });
 };
 
-Template.loading.destroyed = function () {
-  if ( this.loading ) {
-    this.loading.finish();
-  }
-};
-
-var message = '<p class="loading-message">Loading Message</p>';
-var spinner = '<div class="sk-spinner sk-spinner-rotating-plane"></div>';
-*/
 
 WebFontConfig = {
     google: { families: [ 'Playfair+Display:400,700italic,400italic:latin','Open+Sans:400,400italic:latin' ] }
   };
+  
   (function() {
     var wf = document.createElement('script');
     wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
