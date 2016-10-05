@@ -43,11 +43,18 @@ Template.header.rendered = function (){
         });
 };
 
+Template.header.events({ 
+      'click #at-nav-button': function(event){
+            event.preventDefault();
+            $('.login').trigger("reset");
+            $('#login').modal('show');
+            console.log('se ve');       
+    }
+});   
+
 
 Template.layoutPortfolio.rendered = function (){
  $(".wrap-bg").backstretch([
-          "https://source.unsplash.com/daily",
-          "https://source.unsplash.com/category/food/weekly",
           "https://source.unsplash.com/category/people"
 
         ], {

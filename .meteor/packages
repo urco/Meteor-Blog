@@ -18,7 +18,6 @@ ecmascript@0.5.8              # Enable ECMAScript2015+ syntax in app code
 iron:router
 twbs:bootstrap
 accounts-password@1.3.0
-ian:accounts-ui-bootstrap-3
 mrt:accounts-admin-ui-bootstrap-3
 alanning:roles
 ryw:blog
@@ -30,5 +29,5 @@ zimme:active-route
 pcel:loading
 sacha:spin
 shell-server
-las:vegas
 goltfisch:jquery-backstretch
+useraccounts:bootstrap
