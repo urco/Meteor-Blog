@@ -16,13 +16,28 @@ html, body {
 	position: relative !important;
 
 }*/
+#bs-example-navbar-collapse-1 {
+	margin-top: 3px;
+}
 
+#at-nav-button.btn-default{
+	border: 1px solid #ff5252;
+	border-radius: 17px;
+	color: #ff5252;
+}
+
+#at-nav-button.btn-default:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
 
 .navbar-right a {
 	padding-left: 3px !important;
 	padding-right: 2px !important;
 }
-
+.navbar-right li {
+	margin-top: 5px;
+}
 .meteor-blog-single .meteor-blog-full-width-image {
 	height: 30% !important;
 }
@@ -366,7 +381,8 @@ footer a:visited {
 	color: #ef9a9a  ;
 }
 .pic-profile a {
-	padding-top: 1rem !important;
+	padding-top: 2px !important;
+	padding-left: 10px !important;
 	
 }
 .pic-profile {

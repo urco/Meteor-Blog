@@ -43,15 +43,15 @@ Template.header.rendered = function (){
         });
 };
 
-Template.header.events({ 
-      'click #at-nav-button': function(event){
-            event.preventDefault();
-            $('.login').trigger("reset");
-            $('#login').modal('show');
-            console.log('se ve');       
+Template.header.events({
+  'click #at-nav-button': function() {
+    if (Meteor.userId()){
+      AccountsTemplates.logout();
+    } else {
+      Modal.show('login');
     }
-});   
-
+  }
+});
 
 Template.layoutPortfolio.rendered = function (){
  $(".wrap-bg").backstretch([
@@ -62,7 +62,6 @@ Template.layoutPortfolio.rendered = function (){
             duration: 4000
         });
 };
-
 
 WebFontConfig = {
     google: { families: [ 'Playfair+Display:400,700italic,400italic:latin','Open+Sans:400,400italic:latin' ] }
