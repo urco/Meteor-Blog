@@ -23,7 +23,6 @@ alanning:roles
 ryw:blog
 standard-minifier-css@1.2.0_1
 standard-minifier-js@1.2.0_1
-liberation:shareit
 dburles:mongo-collection-instances
 zimme:active-route
 pcel:loading
@@ -35,3 +34,4 @@ peppelg:bootstrap-3-modal
 service-configuration@1.0.10
 accounts-facebook
 accounts-google
+liberation:shareit

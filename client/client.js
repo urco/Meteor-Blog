@@ -1,11 +1,9 @@
-
-ShareIt.init({
+ ShareIt.init({
     siteOrder: ['facebook', 'twitter'],
     sites: {
       'facebook': {
-        'appId': 'YOUR_APPLICATION_ID',
-        'version': 'v2.3',
-        //'buttonText': 'Share on FB'
+        'appId': '1062614360451418'
+        //'version': 'v2.8'
       }
     },
     iconOnly: true,
@@ -17,12 +15,23 @@ Template.header.helpers({
         isAdminUser: function() {
             return Roles.userIsInRole(Meteor.user(), ['admin']);
         },
+        currentUser:function(){
+          return Meteor.user();
+        },
+        userPicHelper: function() {
+        if (Meteor.user().services.facebook) {
+            return 'http://graph.facebook.com/' + Meteor.user().services.facebook.id + '/picture?type=square&height=160&width=160';
+          }
+        else {
+            return 'https://www.iperhour.com/wp-content/plugins/dashboard/assets/images/user-avatar-placeholder.png'
+          }
+        },
         isBlogUser:function(){
             if (Roles.userIsInRole(Meteor.user(), ['blogAuthor'])) {
                 console.log("blogAuthor");
                 return Roles.userIsInRole(Meteor.user(), ['blogAuthor']);
-                 
                 }
+
             if (Roles.userIsInRole(Meteor.user(), ['blogAdmin'])){
                  console.log("blogAdmin");
                  return Roles.userIsInRole(Meteor.user(), ['blogAdmin']);            

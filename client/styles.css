@@ -237,6 +237,16 @@ h1.meteor-blog-post-title.text-center {
 	margin-left: auto ;
 }
 
+
+.meteor-blog-post .meteor-blog-post-excerpt h2 {
+	margin-top: 2rem !important;
+	margin-bottom: 2rem !important;		
+}
+
+h1.meteor-blog-post-title.text-center {
+	
+	margin-bottom: 2rem !important;		
+}
 .meteor-blog-post-thumbnail {
 	width: 100% !important;
 	height: auto !important;

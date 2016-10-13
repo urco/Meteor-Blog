@@ -1,5 +1,27 @@
 <template name="layoutBlog">
 	<div class="container">
-	    	{{> blogShow}} 
+	    	{{> blogShow}}
+	    	<!--{{#with post}}
+				<div class="thumb_featured_image">
+	             <img src="{{featuredImage}}" alt="" class="img-responsive center-block">
+			    </div>
+		        <h1>{{title}}</h1>
+		        <div>
+		        {{ BlogLanguage.metaAuthorBy }} {{authorName}} {{ BlogLanguage.metaAuthorOn }} 
+		        {{blogFormatDate publishedAt}}		
+          		{{> blogTags }}
+         		</div>
+         		<div id="commentable-area">
+        			{{{html}}}
+      			</div>
+	    	{{/with}}
+	    	<div class="wrap-footer-post">
+		    	<div class="meteor-blog-back-link pull-left">
+	      			<a href="{{blogPathFor 'blogIndex'}}"><i class="fa fa-caret-left"></i>{{ BlogLanguage.backToBlogIndex }}</a>
+	    		</div>
+	    		<div class="pull-right">
+		    	{{>shareit shareData }}
+		    	</div>
+		    </div>-->	
 	</div>
 </template>

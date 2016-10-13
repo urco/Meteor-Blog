@@ -1,3 +1,4 @@
+ 
 Meteor.startup(function () {
         
          ServiceConfiguration.configurations.update(
@@ -23,8 +24,8 @@ Meteor.startup(function () {
             );
         
         // bootstrap the admin user if they exist -- You'll be replacing the id later
-        if (Meteor.users.findOne("2AdWGzMbTmAMpqNx2"))
-            Roles.addUsersToRoles("2AdWGzMbTmAMpqNx2", ['admin', 'blogAdmin']);
+        if (Meteor.users.findOne("CXAiKEqCKNBMw7eXN"))
+            Roles.addUsersToRoles("CXAiKEqCKNBMw7eXN", ['admin', 'blogAdmin']);
 
         // create a couple of roles if they don't already exist (THESE ARE NOT NEEDED -- just for the demo)
         if(!Meteor.roles.findOne({name: "secret"}))
@@ -34,6 +35,3 @@ Meteor.startup(function () {
             Roles.createRole("double-secret");
     });
 
-service: 'google'
-  clientId: '8732432343841634324-234239j7df91mg5a8232wq75cgdsff38ekoj.apps.googleusercontent.com'
-  secret: 'e8sdf4dsST-VfsdSAXUh8HHSSWLJDSJ'

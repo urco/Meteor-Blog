@@ -18,6 +18,7 @@ Router.route('/blog', function () {
    this.render('layoutIndexBlog');
 });
 
+
 Router.route('/users', function () { 
   this.render('users');
 
