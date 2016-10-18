@@ -47,10 +47,11 @@ Template.users.helpers({
     });
 
 Template.header.rendered = function (){
-  $(".navbar-toggle").on("click", function () {
+   $(".navbar-toggle").on("click", function () {
             $(this).toggleClass("active");
         });
 };
+
 
 Template.header.events({
   'click #at-nav-button': function() {

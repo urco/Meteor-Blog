@@ -26,19 +26,19 @@
 
       <ul class="nav navbar-nav list-menu-desktop">
         <li class="{{ isActiveRoute 'portfolio' class='active-link' }}">
-              <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="/">Portfolio</a> 
+              <a  href="/">Portfolio</a> 
         </li>  
         <li class="{{ isActivePath regex='^\\/blog' class='active-link' }}">
-            <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="{{ pathFor 'blog' }}">Blog</a>
+            <a href="{{ pathFor 'blog' }}">Blog</a>
         </li>
         {{#if isBlogUser}}
             <li class="{{ isActivePath '/admin/blog' class='active-link' }}">
-              <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="/admin/blog">Posts</a>
+              <a  href="/admin/blog">Posts</a>
             </li> 
           {{/if}}  
           {{#if isAdminUser}}
           <li class="{{ isActivePath '/users' class='active-link' }}">
-            <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="{{ pathFor 'users' }}">Users</a>
+            <a href="{{ pathFor 'users' }}">Users</a>
           </li>
           {{/if}}
       </ul>
