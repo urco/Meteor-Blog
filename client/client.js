@@ -65,11 +65,16 @@ Template.header.events({
 
 Template.layoutPortfolio.rendered = function (){
  $(".wrap-bg").backstretch([
-          "https://source.unsplash.com/category/people"
+          "building.jpeg",
+          "cakes.jpeg",
+          "girl_hair.jpeg",
+          "girl2.jpeg",
+          "cakes.jpeg",
+          "hotdog.jpeg"
 
         ], {
             fade: 750,
-            duration: 4000
+            duration: 2000
         });
 };
 

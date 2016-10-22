@@ -6,7 +6,8 @@ Meteor.startup(function () {
               {
                 $set: {
                   "appId": "1062614360451418",
-                  "secret": "9e86a083e92b1652f752353f314b21c6"
+                  "secret": "9e86a083e92b1652f752353f314b21c6",
+                  
                 }
               },
 

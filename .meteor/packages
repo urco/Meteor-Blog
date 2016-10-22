@@ -35,3 +35,5 @@ service-configuration@1.0.10
 accounts-facebook
 accounts-google
 liberation:shareit
+cfs:standard-packages
+cfs:gridfs

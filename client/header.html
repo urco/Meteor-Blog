@@ -19,8 +19,12 @@
           <div class="list-group ">
             <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="/" class="list-group-item"><i class="fa fa-camera-retro fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Portfolio</a>
             <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="{{ pathFor 'blog' }}" class="list-group-item"><i class="fa fa-sticky-note-o fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Blog</a>
+             {{#if isBlogUser}}
             <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="/admin/blog" class="list-group-item" ><i class="fa fa-pencil fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Posts</a>
+              {{/if}} 
+             {{#if isAdminUser}} 
             <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="{{ pathFor 'users' }}" class="list-group-item"><i class="fa fa-user fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Users</a>
+            {{/if}}
           </div>
         </ul>
 
