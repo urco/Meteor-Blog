@@ -2,8 +2,8 @@
     siteOrder: ['facebook', 'twitter'],
     sites: {
       'facebook': {
-        'appId': '1062614360451418'
-        //'version': 'v2.8'
+        'appId': '1062614360451418',
+        'version': 'v2.8'
       }
     },
     iconOnly: true,

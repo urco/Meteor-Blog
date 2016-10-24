@@ -16,6 +16,7 @@ html, body {
 	position: relative !important;
 
 }*/
+
 #bs-example-navbar-collapse-1 {
 	margin-top: 3px;
 }
@@ -377,6 +378,12 @@ footer a:hover {
 }
 footer a:visited {
 	color: #ffcdd2;
+}
+
+p.medium-insert-active {
+	text-align: center !important;
+	width: 100% !important;
+	height: auto !important;
 }
 
 .meteor-blog-back-link a {
