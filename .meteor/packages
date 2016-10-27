@@ -25,7 +25,6 @@ standard-minifier-css@1.2.0_1
 standard-minifier-js@1.2.0_1
 dburles:mongo-collection-instances
 zimme:active-route
-pcel:loading
 sacha:spin
 shell-server@0.2.1
 goltfisch:jquery-backstretch
@@ -37,3 +36,4 @@ accounts-google@1.0.10
 liberation:shareit
 cfs:standard-packages
 cfs:gridfs
+multiply:iron-router-progress

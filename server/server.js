@@ -1,6 +1,7 @@
  
 Meteor.startup(function () {
-        
+          
+
          ServiceConfiguration.configurations.update(
               { "service": "facebook" },
               {

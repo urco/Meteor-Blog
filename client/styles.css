@@ -9,13 +9,26 @@ html, body {
   	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 }
-/*
-.user-icon {
-	display: none !important;
-	float: right !important;
-	position: relative !important;
+#iron-router-progress {
+    background-color : #ff5252;
+    box-shadow       : 0 0 5px #ff5252;
+}
 
-}*/
+#iron-router-progress.spinner:before {
+    border-color : #ff5252;
+}
+a.blog-load-more{
+	width: 100% !important;
+	color: #fff !important;
+	background-color: #ff5252;
+}
+
+a.blog-load-more:hover{
+	width: 100% !important;
+	color: #fff !important;
+	background-color: #ff5252;
+	opacity:0.9;
+}
 
 #bs-example-navbar-collapse-1 {
 	margin-top: 3px;
@@ -491,11 +504,5 @@ li.circle-button > a {
 .list-menu-desktop {
 	display: none;
 }
-/*
-.user-icon {
-	display: block !important;
-}
-.user-icon > a {
-	padding-top: 0rem !important;
-}	*/
+
  }

@@ -103,13 +103,13 @@ mongo-id@1.0.5
 mongo-livedata@1.0.12
 mrt:accounts-admin-ui-bootstrap-3@0.2.7
 mrt:underscore-string-latest@2.3.3
+multiply:iron-router-progress@1.0.2
 npm-bcrypt@0.9.1_1
 npm-mongo@2.2.11_1
 oauth@1.1.11
 oauth2@1.1.10
 observe-sequence@1.0.13
 ordered-dict@1.0.8
-pcel:loading@1.0.3
 peppelg:bootstrap-3-modal@1.0.4
 promise@0.8.7
 raix:eventemitter@0.1.3

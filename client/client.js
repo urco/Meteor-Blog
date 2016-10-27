@@ -52,6 +52,9 @@ Template.header.rendered = function (){
         });
 };
 
+Template.layoutIndexBlog.rendered = function() {
+  $('a.blog-load-more').addClass('btn-success');
+};
 
 Template.header.events({
   'click #at-nav-button': function() {
