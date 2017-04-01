@@ -1,4 +1,4 @@
-{
+/*{
   "galaxy.meteor.com": {
      "env": {
        "ROOT_URL": "http://my-meteor-app.meteorapp.com",
@@ -6,4 +6,4 @@
        "MONGO_URL": "mongodb://meteorblogAdmin:manuel2332@ds043981.mlab.com:43981/meteor_blog_mongodb"
      }
    }
-}
+}*/
