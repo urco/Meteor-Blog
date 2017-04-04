@@ -26,8 +26,8 @@ Meteor.startup(function () {
             );
         
         // bootstrap the admin user if they exist -- You'll be replacing the id later
-        if (Meteor.users.findOne("zpC6yMQ2eM6r2Sccg"))
-            Roles.addUsersToRoles("zpC6yMQ2eM6r2Sccg", ['admin', 'blogAdmin']);
+        if (Meteor.users.findOne("CFx3iyXxoDQmac4fT")
+            Roles.addUsersToRoles("CFx3iyXxoDQmac4fT", ['admin', 'blogAdmin']);
 
         // create a couple of roles if they don't already exist (THESE ARE NOT NEEDED -- just for the demo)
         if(!Meteor.roles.findOne({name: "secret"}))
